@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    /* background-color: black; */
+    max-width: 1500px;
+    background-image: linear-gradient(
+  50deg,
+  hsl(215deg 94% 21%) 0%,
+  hsl(214deg 86% 24%) 9%,
+  hsl(213deg 78% 27%) 18%,
+  hsl(212deg 72% 31%) 27%,
+  hsl(212deg 71% 33%) 36%,
+  hsl(219deg 68% 34%) 45%,
+  hsl(233deg 53% 37%) 54%,
+  hsl(255deg 58% 34%) 64%,
+  hsl(262deg 66% 29%) 73%,
+  hsl(262deg 69% 24%) 82%,
+  hsl(262deg 72% 18%) 91%,
+  hsl(262deg 80% 14%) 100%
+);
+    color: white;
+  }
+  
+  .container {
+
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 1rem;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-style: groove;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .col {
+
+      display: flex;
+      text-align: center;
+      align-items: center;
+      padding: 0.5rem;
+      justify-content: space-between;
+  }
+  
+  p {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+  }
+
+.container button {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 2rem;
+  padding: 0 1rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.container button:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+
+@media (max-width: 550px) {
+  .container button, .container input{
+    font-size: 12px;
+  }
+} 
+@media (max-width: 500px) {
+  body{
+    height: auto;
+  }
+  .col{
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1rem;
+  }
+  .col button,input{
+    width: 90%;
+  }
+  #paras{
+    justify-content: space-around;
+  }
+.container{
+  grid-template-columns: 50% 1fr;
+  width: 100%;
+}
+} 
+.container input{
+  height: 1.5rem;
+  padding: 0;
+}

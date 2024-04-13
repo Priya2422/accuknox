@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accuknox</title>
+  <meta name="description" content="Assignment for frontend traineee">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Priya Pandey">
+  <link rel="icon" type="image/x-icon" href="./accuknox.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button onclick="toggleBold(1)">Bold</button>
+        <button onclick="toggleItalic(1)">Italic</button>
+        <button onclick="toggleUnderline(1)">Underline</button>
+        <input type="number" id="fontSizeInput1" onchange="changeFontSize(1)" min="10" max="50" value="16">
+        <input type="color" id="colorInput1" onchange="changeColor(1)" value="#ffffff">
+      </div>
+      <div class="col">
+        <button onclick="toggleBold(2)">Bold</button>
+        <button onclick="toggleItalic(2)">Italic</button>
+        <button onclick="toggleUnderline(2)">Underline</button>
+        <input type="number" id="fontSizeInput2" onchange="changeFontSize(2)" min="10" max="50" value="16">
+        <input type="color" id="colorInput2" onchange="changeColor(2)" value="#ffffff">
+      </div>
+      <div class="col">
+        <button onclick="toggleBold(3)">Bold</button>
+        <button onclick="toggleItalic(3)">Italic</button>
+        <button onclick="toggleUnderline(3)">Underline</button>
+        <input type="number" id="fontSizeInput2" onchange="changeFontSize(3)" min="10" max="50" value="16">
+        <input type="color" id="colorInput2" onchange="changeColor(3)" value="#ffffff">
+      </div>
+      <div class="col">
+        <button onclick="toggleBold(4)">Bold</button>
+        <button onclick="toggleItalic(4)">Italic</button>
+        <button onclick="toggleUnderline(4)">Underline</button>
+        <input type="number" id="fontSizeInput2" onchange="changeFontSize(4)" min="10" max="50" value="16">
+        <input type="color" id="colorInput2" onchange="changeColor(4)" value="#ffffff">
+      </div>
+    </div>
+    <div class="row" id="paras">
+      <div class="col">
+        <p id="sentence1">He's not the sharpest knife in the drawer.</p>
+      </div>
+      <div class="col">
+        <p id="sentence2">She's as cold as ice.</p>
+      </div>
+      <div class="col">
+        <p id="sentence3">She's as cold as ice.</p>
+      </div>
+      <div class="col">
+        <p id="sentence4">She's as cold as ice.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
